@@ -12,9 +12,26 @@
 
     <!--Import Bootstrap & css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <!--no external css yet-- <link rel="stylesheet" href="css/styles.css">-->
 
-    <style> div {border: 0px solid black;} </style>
+    <style> 
+        html {box-sizing: border-box; max-width: 100%; overflow-x: hidden;}
+        div {border: 0px solid black;} 
+        .border_test {border: 1px solid red;}
+
+        a.detailed_link {font-size: 75%;}
+
+        div.the_components {margin:10px 0px; padding: 35px 0px; min-width: 100%;}
+        .a_component {margin: 10px 0px; padding: 35px 40px; font-size: 100%; background-color: rgba(100,100,200,0.2);
+            border-left: 4px solid white;
+            border-right: 4px solid white;
+            border-top: 1px solid black; 
+            border-bottom: 1px solid black;
+
+
+        }
+        .a_component p {font-size: 80%;}
+    </style>
 
 </head>
 
@@ -23,65 +40,167 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Honors Capstone Project</h1>
-                    <p>git: </p>
+                <div class="col-12 col-md-6">
+                    <h1>Full-Stack Web/App</h1>
+                    <p>Capstone Project for<br><a class="detailed_link" href="https://www.coursera.org/specializations/full-stack-react">https://www.coursera.org/specializations/full-stack-react</a></p>
                 </div>
-                <div class="col-12 col-sm">
+                <div class="col-12 col-md-6">
+                    <nav>
+                        <ul class="list-unstyled">
+                            <li>HTML/CSS/Javascript</li>
+                            <li>Bootstrap 4</li>
+                            <li>Data Storage: JSON</li>
+                            <li><a class="detailed_link" href="readME.html">readMe.html</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
+
+
     </header>
 
 
 
+<div class="container the_components  align-items-center justify-content-center">
+    <div class="row component_details">
+        <div class="col-12 col-sm-6 col-md-3 a_component">
+            <h3>GTDMFer<hr>daily<br>routine<br>minder</p><hr><p><small>Bootstrap, Dec'18</small></p></h3>
+
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 a_component">
+            <h3>NOTED<hr>take notes <br>on any<br>URL</p><hr><p><small>React, Jan'19</small></p></h3>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 a_component">
+            <h3>focus<hr>chip away<br>at<br>projects</p><hr><p><small>React.Native, Feb'19</small></p></h3>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3 a_component">
+            <h3>doAThing<hr>externalized<br>executive<br>function</p><hr><p><small>Node.js, Mar'19</small></p></h3>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container">
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>GTDMFer
+                    <ul class="a_component_detail">
+                       <li><a href="https://github.com/claudette401/gtdmfer/issues?q=is%3Aopen+is%3Aissue+label%3Adesign">design</a></li>
+                        <li><a href="https://github.com/claudette401/gtdmfer">git</a></li>
+                        <li><a href="https://gtdmfer.conspectives.com">deployed</a></li>
+                        <li><a href="https://www.coursera.org/learn/bootstrap-4/home/welcome">course info</a></li>
+                    </ul>
+                </h3>
+
+            </div>
+            
+            <div class="col col-sm order-sm-first col-md">
+               <h2>Ideation: Objectives and Outcomes</h2>
+
+                <p></p>
+            </div>
+        </div>
+
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3">
+                <h3>NOTED
+                    <ul class="a_component_detail">
+                       <li><a href="https://github.com/claudette401/noted/issues?q=is%3Aopen+is%3Aissue+label%3Adesign">design</a></li>
+                        <li><a href="https://github.com/claudette401/noted">git</a></li>
+                        <li><a href="https://noted.conspectives.com">deployed</a></li>
+                        <li><a href="https://www.coursera.org/learn/front-end-react/home/welcome">course info</a></li>
+                    </ul>
+                </h3>
+            </div>
+
+            <div class="col col-sm col-md">
+                <h2>UI Design and Prototyping: Objectives and Outcomes</h2>
+
+                <p></p>
+            </div>
+        </div>
+
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>focus
+                   <ul class="a_component_detail">
+                       <li><a href="https://github.com/claudette401/focus/issues?q=is%3Aopen+is%3Aissue+label%3Adesign">design</a></li>
+                        <li><a href="https://github.com/claudette401/focus">git</a></li>
+                        <li><a href="https://focus.conspectives.com">deployed</a></li>
+                        <li><a href="https://www.coursera.org/learn/react-native/home/welcome">course info</a></li>
+                    </ul>
+                </h3>
+
+            </div>
+            
+            <div class="col col-sm order-sm-first col-md">
+               <h2>Ideation: Objectives and Outcomes</h2>
+
+                <p></p>
+            </div>
+        </div>
+
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3">
+                <h3>doAThing
+                   <ul class="a_component_detail">
+                       <li><a href="https://github.com/claudette401/doAThing/issues?q=is%3Aopen+is%3Aissue+label%3Adesign">design</a></li>
+                        <li><a href="https://github.com/claudette401/doAThing">git</a></li>
+                        <li><a href="https://doAThing.conspectives.com">deployed</a></li>
+                        <li><a href="https://www.coursera.org/learn/server-side-nodejs/home/welcome">course info</a></li>
+                    </ul>
+                </h3>
+            </div>
+
+            <div class="col col-sm col-md">
+                <h2>UI Design and Prototyping: Objectives and Outcomes</h2>
+
+                <p></p>
+            </div>
+        </div>
+</div>
+
+
+<hr><br><hr>
 
 
 
-Honors Assignments
-Optional - complete these to earn honors distinction for this course.
-Ideation
---
--- 
-Submit your assignment
---
-Dec 9
-Review 3 peers' assignments.
---
-Dec 12
-UI Design and Prototyping
---
--- 
-Submit your assignment
---
-Dec 16
-Review 3 peers' assignments.
---
-Dec 19
-Project Implementation and Final Report
---
--- 
-Submit your assignment
---
-Dec 30
-Review 3 peers' assignments.
+
+
+
+
+
+
+
+
+
+
 <div class="container">
 
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Ideation</h3>
             </div>
+
             <div class="col col-sm order-sm-first col-md">
-                <h2>Uthappizza</h2>
-                <p>It's finally time to submit your Capstone project for evaluation. You need to write a final report giving some details about your implementation as per the specification in the final report template. In addition, you will also submit your source code after uploading it to any suitable site like Github, Bitbucket or others that can be publicly accessed by providing the URL of the site. Make sure that you have sufficiently documented the implementation of your project code by adding appropriate comments within the code so that reviewers can easily understand the code. If your server is running on any publicly hosted server, please submit the URL of the site</p>
-                <p>Review criteria
+               <h2>Ideation: Objectives and Outcomes</h2>
 
-                Your final project submission will be evaluated by your peers considering the following items:
+                <p>The first step in your journey towards the implementation of the Capstone project begins with an idea. In this module you will develop the idea for your project, the set of expected features, survey the market to look at similar ideas to enable you to differentiate your project from others, while at the same time drawing inspiration from them. You are required to submit a formal ideation report following the structure given in the template. This will enable your peers to provide you feedback and suggestions for your project.
 
-                    Have the details of the implementation been briefly described in the final report?
-                    Have any justifications for the choices made been provided in the final report?
-                    Has the source code been made available for review?
-                    Has the URL to the server where the project is running been provided?</p>
+                Before you get started on a project, the first step is to develop the idea for the project. In this module you will explore how you develop your idea and come up with possible set of features for your project. At the end of this step you should be able to:
+
+                Clearly express the central idea of your project, and identify the problem being addressed
+                Delineate a set of features that you expect your website and app should support
+                Identify other projects that might have similar features and would act as exemplars for your project</p>
             </div>
         </div>
 
@@ -90,9 +209,14 @@ Review 3 peers' assignments.
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>UI Design and Prototyping</h3>
             </div>
+
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <h2>UI Design and Prototyping: Objectives and Outcomes</h2>
+
+                <p>Now that you are more clear about your project idea, it's time to conceive how your project is going to look like for the end-users. This is the time to design the user interface and the flow of your application. User interface design and prototyping helps you to conceptualize the look and feel of your application. This can be achieved in two ways: using wireframe diagrams, or using prototyping tools. We provide links to wireframing and prototyping tools in the additional resources. The focus in this lesson is to be able to visually represent various UI elements to enable designing your application. The aim is to deliver an reasonable representation of the end-user experience with your application At the end of this lesson, you should be able to:
+
+                Construct a wireframe diagram to visually represent the structure of your user interface
+                Construct a prototype to enable understanding the flow of your application</p>
             </div>
         </div>
 
@@ -100,47 +224,53 @@ Review 3 peers' assignments.
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Project Implementation and Final Report</h3>
             </div>
+
             <div class="col col-sm order-sm-first col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <h2>Project Implementation: Objectives and Outcomes</h2>
+
+                <p>This is the final stretch before you complete your project. By this time you should already have a good scaffolding for your website. As you flesh out your project and race towards completion, it is time to pause and take stock of the current situation. Perhaps a critical look back at the past, with the view of learning from our experience and consolidating this learning into an effective, organized and repeatable process is in order. Upon completion of the project it is important not only to demonstrate the working project, but also summarize the process of reaching the final goal. At the end of this lesson, you will be able to:
+
+                Document the process of starting from an idea and reaching the conclusion of the project, not just the implementation, but also recognizing the process of reaching the end.
+                Learn lessons from the process in understanding what worked and what did not, and being able to make intelligent choices in the future based on the experience
+                Understand the design and development process through the practice.</p>
             </div>
         </div>
 
 </div>
 
     <footer class="container">
-            <div class="row row-footer">   
+            <div class="row row-footer justify-content-center">   
 
-                <div class="col-4 offset-1 col-sm-3 text-center">
+                <div class="col-auto offset-0 col-sm-2 text-center">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        -
+                        <li><a href="gtdmfer/index.html">Visit GTDMFer</a></li>
+                        -
+                        <li><a href="#">Git Your Own GTDMFer</a></li>
+                        -
+                        <li><a href="#">Feedback</a></li>
+                        -
                     </ul>
                 </div>
 
-                <div class="col-7 col-sm-5">
-                    <h5>Our Address</h5>
-                    <address>
-		              121, Clear Water Bay Road<br>
-		              Clear Water Bay, Kowloon<br>
-		              HONG KONG<br>
-		              Tel.: +852 1234 5678<br>
-		              Fax: +852 8765 4321<br>
-		              Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
-		           </address>
+                <div class="col-8 col-sm-6">
+                    <h5>What you do is what you are.</h5>
+                        <blockquote>   
+                           Sow a thought, and you reap an act;<br>
+                           Sow an act, and you reap a habit;<br>
+                           Sow a habit, and you reap a character;<br>
+                           Sow a character, and you reap a destiny.<br>
+                           -- Samuel Smiles
+                       </blockquote>
                 </div>
 
-                <div  class="col-12 col-sm-3 text-center align-items-center">
+                <div  class="col-12 col-sm-2 text-center align-items-center">
                         <h5>Contact Us</h5>
-                        <a href="http://google.com/+">Google+</a><br>
-                        <a href="http://www.facebook.com/profile.php?id=">Facebook</a><br>
-                        <a href="http://www.linkedin.com/in/">LinkedIn</a><br>
-                        <a href="http://twitter.com/">Twitter</a><br>
-                        <a href="http://youtube.com/">YouTube</a><br>
+                        -<br>
+                        <a href="http://www.linkedin.com/in/">LinkedIn</a><br>-<br>
+                        <a href="http://twitter.com/">Twitter</a><br>-<br>
+                        <a href="http://youtube.com/">YouTube</a><br>-<br>
                         <a href="mailto:">Mail</a>
                 </div>
 
